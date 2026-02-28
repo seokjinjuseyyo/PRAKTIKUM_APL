@@ -9,11 +9,11 @@ void bersihkanLayar() {
     #ifdef _WIN32
         system("cls");
     #else
-        system("clear");
+
     #endif
 }
 
-// Fungsi biar mudah nampilin si garis pemisahnya 
+// Fungsi biar mudah nampilin si garis pemisahnya nanti
 void tampilkanGaris() {
     cout << "=================================================" << endl;
 }
@@ -21,7 +21,7 @@ void tampilkanGaris() {
 // Fungsi buat nampilin headernya biar cakep
 void tampilkanHeader() {
     tampilkanGaris();
-    cout << "|        PROGRAM KONVERSI SATUAN WAKTU         |" << endl;
+    cout << "|         PROGRAM KONVERSI SATUAN WAKTU         |" << endl;
     cout << "|          Algoritma Pemrograman Dasar          |" << endl;
     tampilkanGaris();
 }
@@ -30,20 +30,20 @@ void tampilkanHeader() {
 // Mengembalikan true jika login berhasil, false jika gagal 3 kali
 bool prosesLogin() {
     string nama;       //untuk nyimpan nama usernya
-    string password;   // variabel untuk menyimpan password (3 digit terakhir NIM)
-    int percobaan = 0; // variabel untuk menghitung percobaan login
+    string password;   // untuk kita nyimpan si 3 digit nim itu
+    int percobaan = 0; // untuk ngitung udah berapa kali login
 
-    // Data login yang valid
+    // Data login yang valid atau bener
     string namaValid = "syarifah";
-    string passwordValid = "007"; // 3 digit terakhir NIM 2509106007
+    string passwordValid = "007"; // ini 3 digit nim yang dimau
 
     while (percobaan < 3) {
         bersihkanLayar();
         tampilkanHeader();
         cout << endl;
-        cout << "  ===== HALAMAN LOGIN =====" << endl;
+        cout << "   ===== SELAMAT DATANG DI HALAMAN LOGIN =====    " << endl;
         cout << endl;
-        cout << "  Percobaan ke-" << (percobaan + 1) << " dari 3" << endl;
+        cout << "  Ini percobaan ke-" << (percobaan + 1) << " dari 3 kesempatan percobaan" << endl;
         cout << endl;
         cout << "  Nama     : ";
         cin >> nama;
@@ -71,7 +71,7 @@ bool prosesLogin() {
         }
     }
 
-    // Jika sudah 3 kali gagal
+    // Nahh kalau sudah 3 kali salah maka akan dinyatakan gagal yaa
     bersihkanLayar();
     tampilkanHeader();
     cout << endl;
@@ -83,26 +83,26 @@ bool prosesLogin() {
     return false;
 }
 
-// Fungsi untuk konversi jam ke menit dan detik
+// Fungsi buat kita konversi dari jam ke menit dan detik
 void konversiJam() {
-    double inputJam;     // variabel untuk menyimpan nilai jam yang diinput
-    double hasilMenit;   // variabel untuk menyimpan hasil konversi ke menit
-    double hasilDetik;   // variabel untuk menyimpan hasil konversi ke detik
+    double inputJam;     // untuk menyimpan nilai jam yang diinput sama user nanti
+    double hasilMenit;   // untuk menyimpan hasil konversinya ke menit
+    double hasilDetik;   // untuk menyimpan hasil konversinya ke detik
 
     bersihkanLayar();
     tampilkanHeader();
     cout << endl;
-    cout << "  ===== KONVERSI JAM ke MENIT & DETIK =====" << endl;
+    cout << "   ========= KONVERSI JAM ke MENIT & DETIK ==========   " << endl;
     cout << endl;
     cout << "  Masukkan nilai waktu dalam JAM : ";
     cin >> inputJam;
 
-    // Rumus konversi
+    // Ini buat rumus konversinya
     hasilMenit = inputJam * 60;
     hasilDetik = inputJam * 3600;
 
     cout << endl;
-    cout << "  ----- HASIL KONVERSI -----" << endl;
+    cout << "  -------------- HASIL KONVERSI --------------  " << endl;
     cout << "  " << inputJam << " Jam = " << hasilMenit << " Menit" << endl;
     cout << "  " << inputJam << " Jam = " << hasilDetik << " Detik" << endl;
     cout << endl;
@@ -112,26 +112,26 @@ void konversiJam() {
     cin.get();
 }
 
-// Fungsi untuk konversi menit ke jam dan detik
+// Fungsi untuk konversi dari menit ke jam dan detik
 void konversiMenit() {
-    double inputMenit;   // variabel untuk menyimpan nilai menit yang diinput
-    double hasilJam;     // variabel untuk menyimpan hasil konversi ke jam
-    double hasilDetik;   // variabel untuk menyimpan hasil konversi ke detik
+    double inputMenit;   // untuk menyimpan nilai menit yang diinput sama user nanti
+    double hasilJam;     // untuk menyimpan hasil konversinya ke jam
+    double hasilDetik;   // untuk menyimpan hasil konversinya ke detik
 
     bersihkanLayar();
     tampilkanHeader();
     cout << endl;
-    cout << "  ===== KONVERSI MENIT ke JAM & DETIK =====" << endl;
+    cout << "   ========= KONVERSI MENIT ke JAM & DETIK ==========   " << endl;
     cout << endl;
     cout << "  Masukkan nilai waktu dalam MENIT : ";
     cin >> inputMenit;
 
-    // Rumus konversi
+    // Rumus konversinya
     hasilJam   = inputMenit / 60;
     hasilDetik = inputMenit * 60;
 
     cout << endl;
-    cout << "  ----- HASIL KONVERSI -----" << endl;
+    cout << "  -------------- HASIL KONVERSI --------------  " << endl;
     cout << "  " << inputMenit << " Menit = " << hasilJam << " Jam" << endl;
     cout << "  " << inputMenit << " Menit = " << hasilDetik << " Detik" << endl;
     cout << endl;
@@ -141,26 +141,26 @@ void konversiMenit() {
     cin.get();
 }
 
-// Fungsi untuk konversi detik ke jam dan menit
+// Fungsi untuk konversi dari detik ke jam dan menit
 void konversiDetik() {
-    double inputDetik;   // variabel untuk menyimpan nilai detik yang diinput
-    double hasilJam;     // variabel untuk menyimpan hasil konversi ke jam
-    double hasilMenit;   // variabel untuk menyimpan hasil konversi ke menit
+    double inputDetik;   // untuk menyimpan nilai detik yang diinput oleh user nantinya
+    double hasilJam;     // untuk menyimpan hasil konversi ke jam
+    double hasilMenit;   // untuk menyimpan hasil konversi ke menit
 
     bersihkanLayar();
     tampilkanHeader();
     cout << endl;
-    cout << "  ===== KONVERSI DETIK ke JAM & MENIT =====" << endl;
+    cout << "   ========= KONVERSI DETIK ke JAM & MENIT ==========   " << endl;
     cout << endl;
     cout << "  Masukkan nilai waktu dalam DETIK : ";
     cin >> inputDetik;
 
-    // Rumus konversi
+    // Rumus konversinya
     hasilJam   = inputDetik / 3600;
     hasilMenit = inputDetik / 60;
 
     cout << endl;
-    cout << "  ----- HASIL KONVERSI -----" << endl;
+    cout << "  -------------- HASIL KONVERSI --------------  " << endl;
     cout << "  " << inputDetik << " Detik = " << hasilJam << " Jam" << endl;
     cout << "  " << inputDetik << " Detik = " << hasilMenit << " Menit" << endl;
     cout << endl;
@@ -170,16 +170,16 @@ void konversiDetik() {
     cin.get();
 }
 
-// Fungsi untuk menampilkan menu utama dan menangani pilihan user
+// Fungsi buat nampilin menu utama dan ngurusin pilihan user
 void tampilkanMenuUtama() {
-    string pilihanMenu; // variabel untuk menyimpan pilihan menu dari user
-    bool programBerjalan = true; // variabel untuk mengontrol looping program
+    string pilihanMenu; // untuk nyimpan pilihan menu dari user
+    bool programBerjalan = true; // untuk kontrol looping program 
 
     while (programBerjalan) {
         bersihkanLayar();
         tampilkanHeader();
         cout << endl;
-        cout << "  ===== MENU UTAMA =====" << endl;
+        cout << "  ================= MENU UTAMA ================  " << endl;
         cout << endl;
         cout << "  1. Konversi Jam    -> Menit dan Detik" << endl;
         cout << "  2. Konversi Menit  -> Jam dan Detik" << endl;
