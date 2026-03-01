@@ -41,7 +41,7 @@ int main() {
             percobaan++;
             if (percobaan < 3) { // kalau belum sampai 3kali ya jalan terus programnya
                 cout << endl;
-                cout << "  Nama atau password salah! Sisa percobaan: " << (3 - percobaan) << endl;
+                cout << "  Nama atau passwordnya salah! Sisa percobaan: " << (3 - percobaan) << endl;
                 cout << "  Tekan Enter untuk mencoba lagi...";
                 cin.ignore();
                 cin.get();
@@ -53,7 +53,7 @@ int main() {
     if (loginBerhasil == false) {
         cout << endl;
         cout << "  AKSES DITOLAK!" << endl;
-        cout << "  Anda telah gagal login sebanyak 3 kali." << endl;
+        cout << "  Anda telah gagal login sebanyak 3 kali" << endl;
         cout << "  Program dihentikan." << endl;
         cout << endl;
         cout << "=================================================" << endl;
@@ -107,7 +107,7 @@ int main() {
                     cout << endl;
                 } else if (inputJam < 0) {
                     cout << endl;
-                    cout << "  ERROR: Waktu tidak boleh negatif!" << endl;
+                    cout << "  ERROR: Waktunya tidak boleh negatif!" << endl;
                     cout << endl;
                 } else {
                     inputValid = true;
@@ -201,7 +201,7 @@ int main() {
                     cout << endl;
                 } else if (inputDetik < 0) {
                     cout << endl;
-                    cout << "  ERROR: Waktu tidak boleh negatif!" << endl;
+                    cout << "  ERROR: Waktunya tidak boleh negatif!" << endl;
                     cout << endl;
                 } else {
                     inputValid = true;
@@ -228,8 +228,8 @@ int main() {
             cout << "|          Algoritma Pemrograman Dasar          |" << endl;
             cout << "=================================================" << endl;
             cout << endl;
-            cout << "  Terima kasih sudah menggunakan program ini!" << endl;
-            cout << "  Program selesai." << endl;
+            cout << "  Terima kasih sudah karena menggunakan program ini!" << endl;
+            cout << "  Program sudah selesai." << endl;
             cout << endl;
             cout << "=================================================" << endl;
             programBerjalan = false;
@@ -237,7 +237,7 @@ int main() {
         // ini output kalau inputan yang dimasukan user itu ngasal
         } else {
             cout << endl;
-            cout << "  Pilihan tidak valid! Masukkan angka 1-4." << endl;
+            cout << "  Pilihan anda tidak valid! Masukkan angka 1-4." << endl;
             cout << "  Tekan Enter untuk mencoba lagi...";
             cin.ignore();
             cin.get();
