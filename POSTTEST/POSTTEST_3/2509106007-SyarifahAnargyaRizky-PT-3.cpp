@@ -68,7 +68,7 @@ void cetakGaris() {
     cout << "|";
     for (int i = 0; i < LEBAR_KAT + 2;   i++) cout << "=";
     cout << "|";
-    for (int i = 0; i < LEBAR_HARGA + 5; i++) cout << "="; // +3 "Rp " +2 spasi padding
+    for (int i = 0; i < LEBAR_HARGA + 5; i++) cout << "="; 
     cout << "|";
     for (int i = 0; i < LEBAR_STOK + 2;  i++) cout << "=";
     cout << "=" << endl;
@@ -82,7 +82,7 @@ void cetakGarisBaris() {
     cout << "|";
     for (int i = 0; i < LEBAR_KAT + 2;   i++) cout << "-";
     cout << "|";
-    for (int i = 0; i < LEBAR_HARGA + 5; i++) cout << "-"; // sama kayak cetakGaris
+    for (int i = 0; i < LEBAR_HARGA + 5; i++) cout << "-"; 
     cout << "|";
     for (int i = 0; i < LEBAR_STOK + 2;  i++) cout << "-";
     cout << "-" << endl;
@@ -124,7 +124,6 @@ void cetakTabelProduk() { // prosedur buat nyetak tabelnya biar rapi
     } else {
         for (int i = 0; i < jumlahProduk; i++) {
             cetakBarisProduk(daftarProduk[i]);
-            // cetak garis '-' setelah tiap baris kecuali baris terakhir
             if (i < jumlahProduk - 1) cetakGarisBaris();
         }
     }
