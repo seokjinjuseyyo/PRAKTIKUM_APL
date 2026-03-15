@@ -642,7 +642,7 @@ int main() { // main menu nya enih
             cout << "|==============================================|" << endl;
 
         } else {
-            cout << "Pilihan tidak valid. Masukkan 1, 2, atau 3." << endl;
+            cout << "Pilihan tidak valid, Masukkan pilihan 1, 2, atau 3." << endl;
         }
 
     } while (pilihanAwal != 3);

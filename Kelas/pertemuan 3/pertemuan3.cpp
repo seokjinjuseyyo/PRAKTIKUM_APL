@@ -81,7 +81,7 @@ cetakSkor();
 return 0;
 }*/
 
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 void calonJuara() {
 // variabel lokal, cuma bisa dipakai di dalam fungsi ini
@@ -94,4 +94,5 @@ calonJuara(); // fungsi berjalan normal
 // cout << "Tim: " << Team << endl;
 // maka akan error karena Team tidak dikenal di sini
 return 0;
-}*/
+}
+
