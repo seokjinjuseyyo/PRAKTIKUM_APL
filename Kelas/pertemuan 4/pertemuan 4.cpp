@@ -21,4 +21,4 @@ cout < address1.kota <endl;
 / value address2
 cout < address2.kota;
 return 0;
-}*/
+}*/ // ini dari modul
