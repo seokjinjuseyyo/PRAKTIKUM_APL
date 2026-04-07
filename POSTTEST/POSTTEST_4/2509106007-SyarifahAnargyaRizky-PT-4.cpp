@@ -33,7 +33,7 @@ int      jumlahPengguna = 0;
 
 void cetakGaris();
 void cetakHeaderTabel();
-void cetakBarisProduk(Produk *produkPtr); // pakai pointer ke struct Produk
+void cetakBarisProduk(Produk *produkPtr); // kita pakai pointer ke struct Produk
 void cetakTabelProduk();
 
 int  hitungTotalBelanja(int idKeranjang[], int jumlahKeranjang[], int isiKeranjang, int indeks);
