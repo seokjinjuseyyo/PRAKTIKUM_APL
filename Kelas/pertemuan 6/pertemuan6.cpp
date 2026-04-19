@@ -41,4 +41,4 @@ cout < "Data ditemukan pada indeks ke-" < hasil < endl;
 cout < "Data tidak ditemukan" < endl;
 }
 return 0;
-} */
+}  begitulah*/

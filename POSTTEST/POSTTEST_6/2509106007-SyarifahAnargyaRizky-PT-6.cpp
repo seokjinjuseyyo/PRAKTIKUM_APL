@@ -205,7 +205,7 @@ void cariProdukLinear(Produk *arrProduk, int jumlah, string keyword) { // pakai 
         }
 
         if (cocok) {
-            cetakBarisProduk(arrProduk + i); // kirim pointer ke elemen yang cocok pakai aritmatika pointer
+            cetakBarisProduk(arrProduk + i); // kirim pointernya ke elemen yang cocok pakai aritmatika pointer
             adaHasil = true;
         }
     }
